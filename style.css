@@ -1,0 +1,221 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/tlo.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;  
+}
+
+.glowny{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.okno{
+
+    width: 60vh;
+    height: 60vh;
+    background-color: rgba(8, 8, 8, 0.6);
+    border-radius: 25px;
+    box-shadow: 0px 0px 24px 0px rgb(255, 255, 255);
+    backdrop-filter: blur(8px);
+    border: 1px solid white;
+    
+}
+
+.naglowek{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+h1{
+    color: rgb(213, 219, 157);
+    font-size: 50px;
+}
+
+.linia{
+    width: 90%;
+    height: 5px;
+    background-image: linear-gradient(to right, rgb(213, 219, 157), #0000ff00);
+    border-radius: 5px;
+    border: none;
+}
+
+.opis{
+    color: rgb(213, 219, 157);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+.wyborPlci{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    
+}
+
+.plec{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(213, 219, 157);
+    background-color: rgba(8, 8, 8, 0.4);
+    width: 200px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 1s ease-out;
+
+}
+
+#femaleButton{
+    margin-left: 20px;
+}
+
+#maleButton{
+    margin-right: 20px;
+}
+
+.plecImg{
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+}
+
+.dane{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    color: rgb(213, 219, 157);
+    font-size: 20px;
+}
+
+#wiek{
+    margin-right: 100px;
+}
+
+#waga{
+    margin-right: 100px;
+}
+
+.imgData{
+    margin-right: 10px;
+    height: 35px;
+    float: left;  
+}
+
+.InData{
+    margin-top: 3px;
+    width: 80px;
+    height: 30px;
+    background: rgba(8, 8, 8, 0.6);
+    color: rgb(213, 219, 157);
+    border-radius: 15px;
+    vertical-align: bottom;
+    border: 1px solid white;
+    text-align: center;
+    transition: transform 1s ease-out;
+    cursor: pointer;
+}
+
+.InData:focus{
+    outline: none;
+    transform: scale(1.2);
+    background-color: rgba(173, 172, 172, 0.2);
+}
+
+.active{
+    outline: none;
+    transform: scale(1.2);
+    background-color: rgba(173, 172, 172, 0.2);
+}
+
+.aktywnosc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    flex-direction: column;
+}
+
+.listaAktywnosci{
+    cursor: pointer;
+    border-radius: 15px;
+    height: 50px;
+    width: 400px;
+    text-align: center;
+    background: rgba(8, 8, 8, 0.6);
+    color: rgb(213, 219, 157);
+    outline: none;
+    transition: transform 1s ease-out;
+    margin-top: 10px;;
+}
+
+.listaAktywnosci:focus{
+    transform: scale(1.025);
+    background: rgba(8, 8, 8, 0.6);
+}
+
+.wybierak1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#wybor{
+    font-size: 20px;
+}
+
+#oblicz{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    outline: none;
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    background: rgb(213, 219, 157);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px rgb(255, 255, 255);
+}
+
+#textButton{
+    font-size: 20px;
+}
+
+#result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(213, 219, 157);
+    background: rgba(8, 8, 8, 0.822);
+    border-radius: 15px;
+    border: 1px solid white;
+    height: 100px;
+    width: 100%;
+    font-size: 30px;
+    box-shadow: 0px 0px 15px 0px rgb(255, 255, 255);
+
+}
+/* D5DB9D */

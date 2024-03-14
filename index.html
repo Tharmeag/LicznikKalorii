@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Kalkulator Kalorii</title>
+</head>
+
+<body>
+    <div class="glowny">
+        <div Id="calc" class="okno">
+            <div class="naglowek">
+                <h1>Kalkulator Kalorii</h1>
+                <hr class="linia">
+            </div>
+            <div class="opis">
+                <h2>Wprowadź swoje dane i sprawdź zapotrzebowanie kaloryczne</h2>
+            </div>
+            <div class="wyborPlci" id="wyborPlci">
+                <label for="gender"></label>
+                <button type="radio" id="maleButton" class="plec" value="mele">
+                    <img class="plecImg" src="images/man.png" alt="man">
+                    Męszczyzna
+                </button>
+                <button id="femaleButton" class="plec" balue="famele">
+                    <img class="plecImg" src="/images/female.png" alt="famele">
+                    Kobieta
+                </button>
+            </div>
+            <div class="dane">
+                <label for="age"></label>
+                <div id="wiek" class="inputData">
+                    <img class="imgData" src="/images/date.png" alt="age">
+                    <input id="age" class="InData" type="number" placeholder="WIEK" name="age" required></imput>
+                </div>
+                <label for="weight"></label>
+                <div id="waga" class="inputData">
+                    <img class="imgData" src="/images/weight.png" alt="weight">
+                    <input Id="weight" class="InData" type="number" placeholder="WAGA" name="age" required></imput>
+
+                </div>
+                <div id="wzrost" class="inputData">
+                    <img class="imgData" src="/images/height.png" alt="height">
+                    <input id="height" class="InData" type="number" placeholder="WZROST" name="height" required></imput>
+                </div>
+
+            </div>
+            <div class="aktywnosc">
+                <div id="wybor" class="opis">
+                    <b>Wybierz swoją aktywność:</b>
+                </div>
+                <div class="wybierak1">
+                    <img id="imgActivity" src="/images/activity.png">
+                    <select id="activity-level" class="listaAktywnosci" name="activity-level" required>
+                        <option value="1.2">1. NIEWIELKA / BRAK TRENINGÓW </option>
+                            <option value="1.375">2. MAŁA / PRACA SIEDZĄCA</option>
+                            <OPTION value="1.55">3. ŚREDNIA / TRENINGI 2-3 W TYGODNIU</OPTION>
+                        <OPTION value="1.9">4. DUŻA / PRACA FIZYCZNA / TRENINGI CODZIENNIE</OPTION>
+                    </select>
+                </div>
+                <div class="aktywnosc">
+                    <div id="wybor" class="opis">
+                        <b>Jaki jest Twój cel:</b>
+                    </div>
+                    <div class="wybierak1">
+                        <img id="imgActivity" src="/images/muscle.png">
+                        <select id="goal" class="listaAktywnosci">
+                            <option value="lose">1. CHCĘ SCHUDNĄĆ</option>
+                                <option value="maintain">2. CHCĘ UTRZYMAĆ WAGĘ</option>
+                                <OPTION value="gain">3. CHCĘ PRZYTYĆ</OPTION>
+                        </select>
+                    </div>
+                </div>
+                <button onclick="calculateCalories()" id="oblicz" class="obliczButton" type="submit"><p id="textButton"><b>Oblicz</b></p></button>
+                <div class="rezultat">
+                <p id="result"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
