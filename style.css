@@ -231,8 +231,8 @@ h1{
         align-items: center; /* Wycentrowanie w pionie */
     }
     .okno {
+        margin-top: 500px;
         width: calc(100% - 40px);
-        max-width: none;
         margin-bottom: 20px;
     }
     .wyborPlci, .dane, .listaAktywnosci {
@@ -268,7 +268,19 @@ h1{
         display: flex;
         justify-content: center;
         align-items: center;
-        
+        padding: 15px;
+        margin: 10px;
+    }
+
+    #result {
+        width: 90%;
+        height: 50%;
+    }
+
+    .rezultat{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
